@@ -1,0 +1,201 @@
+[
+    {
+        "created_at": "Fri Apr 17 01:34:10 +0000 2020",
+        "id": 1250960715579641900,
+        "id_str": "1250960715579641857",
+        "text": "RT @connorfranta: what i would give to be annoyed at someone talking too loudly in a quiet coffee shop rn",
+        "truncated": false,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "connorfranta",
+                    "name": "connor",
+                    "id": 180949358,
+                    "id_str": "180949358",
+                    "indices": [
+                        3,
+                        16
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "metadata": {
+            "iso_language_code": "en",
+            "result_type": "recent"
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 2716400491,
+            "id_str": "2716400491",
+            "name": "-- - - -- j",
+            "screen_name": "jvvuss",
+            "location": "Houston, TX",
+            "description": "Self-Portrait Photographer. Houston 📍 buy a print! link below",
+            "url": "https://t.co/7WeigvFzp0",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "https://t.co/7WeigvFzp0",
+                            "expanded_url": "https://jvvus.darkroom.tech/",
+                            "display_url": "jvvus.darkroom.tech",
+                            "indices": [
+                                0,
+                                23
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 1695,
+            "friends_count": 1022,
+            "listed_count": 6,
+            "created_at": "Fri Aug 08 06:50:42 +0000 2014",
+            "favourites_count": 69508,
+            "utc_offset": null,
+            "time_zone": null,
+            "geo_enabled": true,
+            "verified": false,
+            "statuses_count": 32679,
+            "lang": null,
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "C0DEED",
+            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/1247423229565771777/GJ6qyL5K_normal.jpg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1247423229565771777/GJ6qyL5K_normal.jpg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/2716400491/1584772342",
+            "profile_link_color": "1DA1F2",
+            "profile_sidebar_border_color": "C0DEED",
+            "profile_sidebar_fill_color": "DDEEF6",
+            "profile_text_color": "333333",
+            "profile_use_background_image": true,
+            "has_extended_profile": true,
+            "default_profile": true,
+            "default_profile_image": false,
+            "following": false,
+            "follow_request_sent": false,
+            "notifications": false,
+            "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "retweeted_status": {
+            "created_at": "Fri Apr 17 00:11:01 +0000 2020",
+            "id": 1250939787818594300,
+            "id_str": "1250939787818594305",
+            "text": "what i would give to be annoyed at someone talking too loudly in a quiet coffee shop rn",
+            "truncated": false,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": []
+            },
+            "metadata": {
+                "iso_language_code": "en",
+                "result_type": "recent"
+            },
+            "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 180949358,
+                "id_str": "180949358",
+                "name": "connor",
+                "screen_name": "connorfranta",
+                "location": "",
+                "description": "",
+                "url": "https://t.co/gLyQeJwi00",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/gLyQeJwi00",
+                                "expanded_url": "http://connorfranta.com",
+                                "display_url": "connorfranta.com",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 9314407,
+                "friends_count": 4281,
+                "listed_count": 10299,
+                "created_at": "Fri Aug 20 22:34:32 +0000 2010",
+                "favourites_count": 12248,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": true,
+                "verified": true,
+                "statuses_count": 26537,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "F7F7F7",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1250097275310706693/0lW__BFJ_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1250097275310706693/0lW__BFJ_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/180949358/1586886428",
+                "profile_link_color": "224111",
+                "profile_sidebar_border_color": "FFFFFF",
+                "profile_sidebar_fill_color": "000000",
+                "profile_text_color": "F0F0F0",
+                "profile_use_background_image": false,
+                "has_extended_profile": true,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false,
+                "translator_type": "regular"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 357,
+            "favorite_count": 3102,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "en"
+        },
+        "is_quote_status": false,
+        "retweet_count": 357,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    }
+]

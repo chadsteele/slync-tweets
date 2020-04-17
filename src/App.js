@@ -1,28 +1,16 @@
 import React from 'react';
 import './App.css';
-
-import TextField from "@material-ui/core/TextField";
-import IconButton from "@material-ui/core/IconButton";
-import InputAdornment from "@material-ui/core/InputAdornment";
-import SearchIcon from "@material-ui/icons/Search";
+import Container from "@material-ui/core/Container"
+import SearchBox from './SearchBox'
+import Cards from './Cards'
 
 function App() {
   return (
     <div className="App">
-
-      <TextField
-        style={{ width: '50%' }}
-        label="Enter @userName, #hashtags and search terms "
-        InputProps={{
-          endAdornment: (
-            <InputAdornment>
-              <IconButton>
-                <SearchIcon />
-              </IconButton>
-            </InputAdornment>
-          )
-        }}
-      />
+      <Container>
+        <SearchBox />
+        <Cards />
+      </Container>
     </div>
   );
 }
