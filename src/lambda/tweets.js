@@ -13,6 +13,7 @@ exports.handler = function (event, context, callback) {
         q: q,
         count: count,
         result_type: type,
+        lang: 'en'
     }
 
     // Initiate your search using the above paramaters

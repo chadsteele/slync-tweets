@@ -39,7 +39,7 @@ function SearchBox(props) {
                     const q = e.target.value || '*';
                     props.search(q);
                     setMsg("");
-                    window.setInterval(() => {
+                    timer = window.setInterval(() => {
                         props.search(q);
                     }, config.refresh || 60000);
                 }
