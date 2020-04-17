@@ -18,7 +18,7 @@ function SearchBox(props) {
     return <Container className="SearchBox">
         <TextField
             label="Search"
-            placeholder="@userName, #hashtags and search terms"
+            placeholder="from:userName, @userName, #hashtags and/or other search terms"
             fullWidth
             InputProps={{
                 endAdornment: (
