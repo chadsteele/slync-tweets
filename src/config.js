@@ -11,6 +11,7 @@ const config = {
     ],
 
     refresh: 60000,
+
 }
 
 export default config;

@@ -19,6 +19,12 @@ const Card = ({ index, data, width }) => {
         <blockquote className="twitter-tweet">
             <a className="dots" href={`https://twitter.com/user/status/${data.id_str}`}>...</a>
         </blockquote>
+
+        {/* 
+        some queries/users return a lot of the identical tweets, but they are in fact unique
+        <div style={{ color: "gray", fontSize: "x-small", float: "right" }}>        {data.id_str}</div> 
+        */}
+
     </div>
 }
 
