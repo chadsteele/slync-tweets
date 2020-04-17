@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Container from "@material-ui/core/Container"
 import SearchBox from './SearchBox'
@@ -8,20 +8,23 @@ import Api from './Api'
 
 function App() {
 
-  const [data, setData] = useState(config.data);
+  const [items, setItems] = useState(false);
 
-  Api.fetch().then((data) => {
-    const items = data.map(item => {
-      return { id_str: item.id_str }
+  //init with random public tweets
+  useEffect(() => {
+    Api.fetch().then((data) => {
+      const items = data.map(item => {
+        return { id_str: item.id_str }
+      });
+      setItems(items);
     });
-    setData(config.data);
-  });
+  }, []);
 
   return (
     <div className="App">
       <Container>
         <SearchBox />
-        <Cards items={data} />
+        {items ? <Cards items={items} /> : "Loading..."}
       </Container>
     </div>
   );
