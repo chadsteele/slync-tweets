@@ -16,7 +16,8 @@ function App() {
       const items = data.map(item => {
         return { id_str: item.id_str };
       });
-      setItems(items);
+      if (items?.length) setItems(items);
+      else setItems('empty');
     });
   }
 
@@ -29,7 +30,13 @@ function App() {
     <div className="App">
       <Container>
         <SearchBox search={search} />
-        {items ? <Cards items={items} /> : "Loading..."}
+        {
+          (items === "empty")
+            ? "Sorry.  I couldn't find any tweets.  Please edit your search terms"
+            : (items === false) ? "Loading..." : <Cards items={items}
+            />
+        }
+
       </Container>
     </div>
   );

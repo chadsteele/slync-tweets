@@ -15,7 +15,7 @@ function SearchBox(props) {
         <TextField
             className="SearchBox"
             label="Search"
-            placeholder="@userName and search terms "
+            placeholder="@userName and search terms - hit ENTER"
             fullWidth
             InputProps={{
                 endAdornment: (
