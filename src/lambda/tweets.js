@@ -8,7 +8,7 @@ exports.handler = function (event, context, callback) {
     const q = event.queryStringParameters.q || '*';
     const count = event.queryStringParameters.count || 20;
     const type = event.queryStringParameters.type || 'recent';
-    const screen_name = event.queryStringParameters.screen_name || null);
+    const screen_name = event.queryStringParameters.screen_name || null;
 
     // Set up your search parameters
     var params = {
