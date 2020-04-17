@@ -4,9 +4,13 @@ import Card from './Card'
 import config from './config'
 
 
-const Cards = props => (
-    <Masonry columnWidth={300} columnGutter={10} items={props.items || config.items} render={Card} />
-)
+const Cards = props => {
+    document.dispatchEvent(new Event('newTweets'));  //trigger twitter widgets to refresh
+
+    return <>
+        <Masonry id="Cards" columnWidth={300} columnGutter={10} items={props.items || config.items} render={Card} />
+    </>
+}
 
 
 

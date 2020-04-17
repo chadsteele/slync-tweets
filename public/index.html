@@ -26,11 +26,34 @@
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <script>window.twttr = (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+
+      t._e = [];
+      t.ready = function (f) {
+        t._e.push(f);
+      };
+
+      return t;
+    }(document, "script", "twitter-wjs"));
+
+    //lazy load tweet widgets
+    document.addEventListener('newTweets', function (e) {
+      twttr.widgets.load();
+    }, false);
+
+  </script>
+
 </head>
 
 <body>
-
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>

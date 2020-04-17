@@ -11,14 +11,15 @@ https://chadsteele-slync-twitter-client.netlify.app/.netlify/functions/tweets
 
 // returns live data from url (default url in config)
 class Api {
-    fetch(url, q) {
-        url = url || config.api;
-        if (q) url += '?q=' + q;
+    async fetch(q, count, url) {
+        q = q || '*';
+        count = count || 20;
 
-        return fetch(url)
-            .then((response) => {
-                return response.json();
-            });
+        url = url || config.api;
+        url += `?q=${q}&count=${count}`;
+
+        const response = await fetch(url);
+        return response.json();
     }
 }
 

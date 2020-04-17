@@ -8,7 +8,9 @@ const config = {
         { id_str: '1250960715579641857' },
         { id_str: '1250558928561352704' },
         { id_str: '1250895001636216837' },
-    ]
+    ],
+
+    refresh: 60000,
 }
 
 export default config;
