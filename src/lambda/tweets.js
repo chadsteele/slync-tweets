@@ -23,12 +23,22 @@ exports.handler = function (event, context, callback) {
         if (!err) {
             callback(null, {
                 statusCode: 200,
-                body: JSON.stringify(data.statuses)
+                body: JSON.stringify(data.statuses),
+                headers: {
+                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Headers':
+                        'Origin, X-Requested-With, Content-Type, Accept',
+                },
             });
         } else {
             callback(null, {
                 statusCode: 400,
-                body: JSON.stringify(err)
+                body: JSON.stringify(err),
+                headers: {
+                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Headers':
+                        'Origin, X-Requested-With, Content-Type, Accept',
+                },
             });
         }
     });

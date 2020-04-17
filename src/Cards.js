@@ -1,16 +1,11 @@
 import React from 'react';
 import { Masonry } from 'masonic'  //https://www.npmjs.com/package/masonic
 import Card from './Card'
+import config from './config'
 
-//default data
-const items = [
-    { screen_name: 'connorfranta', id_str: '1250960715579641857' },
-    { screen_name: 'PJColley', id_str: '1250558928561352704' },
-    { screen_name: 'WhiteHouse', id_str: '1250895001636216837' },
-]
 
 const Cards = props => (
-    <Masonry columnWidth={300} columnGutter={10} items={props.items || items} render={Card} />
+    <Masonry columnWidth={300} columnGutter={10} items={props.items || config.items} render={Card} />
 )
 
 
