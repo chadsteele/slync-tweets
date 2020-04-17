@@ -45,8 +45,8 @@
     }(document, "script", "twitter-wjs"));
 
     //lazy load tweet widgets
-    document.addEventListener('newTweets', function (e) {
-      twttr.widgets.load();
+    document.addEventListener('renderTweet', function (e) {
+      twttr.widgets.load(e.detail);
     }, false);
 
   </script>

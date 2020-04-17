@@ -1,3 +1,8 @@
 .SearchBox {
   width: 50%
 }
+
+.dots {
+  color: gray;
+  text-decoration: none;
+}
