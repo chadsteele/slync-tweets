@@ -1,8 +1,12 @@
 .SearchBox {
-  width: 50%
+  margin-bottom: 10px;
 }
 
 .dots {
   color: gray;
   text-decoration: none;
+}
+
+.Err {
+  color: red
 }

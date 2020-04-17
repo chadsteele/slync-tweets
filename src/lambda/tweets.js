@@ -2,9 +2,9 @@
 var Twitter = require('twitter');
 var config = require('./config.js');
 var T = new Twitter(config);
+var lastStamp = 0;
 
 exports.handler = function (event, context, callback) {
-
     const q = event.queryStringParameters.q || '*';
     const count = event.queryStringParameters.count || 20;
     const type = event.queryStringParameters.type || 'recent';

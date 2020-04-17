@@ -5,19 +5,34 @@ import SearchBox from './SearchBox'
 import Cards from './Cards'
 import Api from './Api'
 
+function Err(props) {
+  return <span className="Err">{props.children}</span>
+}
+
 function App() {
 
-  const [items, setItems] = useState(false);
+  const [items, setItems] = useState([]);
+  const [msg, setMsg] = useState();
 
   //search for tweets
   const search = (q, count) => {
-    setItems(false);
+    setMsg('Loading...');
     Api.fetch(q, count).then((data) => {
-      const items = data.map(item => {
-        return { id_str: item.id_str };
-      });
-      if (items?.length) setItems(items);
-      else setItems('empty');
+
+      if (data && data.length === 1 && data[0].message) {
+        setMsg(<Err>{data[0].message + ' code: ' + data[0].code}</Err>)
+      } else {
+
+        const items = data.map(item => {
+          return { id_str: item.id_str };
+        });
+
+        setMsg(!items.length
+          ? <Err>Sorry.  I couldn't find anything.  Please edit your search terms.</Err>
+          : ""
+        );
+        setItems(items);
+      }
     });
   }
 
@@ -26,17 +41,13 @@ function App() {
     search();
   }, []);
 
+
   return (
     <div className="App">
       <Container>
         <SearchBox search={search} />
-        {
-          (items === "empty")
-            ? "Sorry.  I couldn't find any tweets.  Please edit your search terms"
-            : (items === false) ? "Loading..." : <Cards items={items}
-            />
-        }
-
+        {msg}
+        <Cards items={items} />
       </Container>
     </div>
   );

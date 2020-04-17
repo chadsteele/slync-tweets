@@ -16,8 +16,9 @@ class Api {
         count = count || 20;
 
         url = url || config.api;
-        url += `?q=${q}&count=${count}`;
+        url += `?q=${encodeURIComponent(q)}&count=${parseInt(count)}`;
 
+        //TODO: throttle this request
         const response = await fetch(url);
         return response.json();
     }

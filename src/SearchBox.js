@@ -4,6 +4,7 @@ import TextField from "@material-ui/core/TextField";
 import IconButton from "@material-ui/core/IconButton";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import SearchIcon from "@material-ui/icons/Search";
+import Container from "@material-ui/core/Container"
 
 import config from './config'
 
@@ -13,11 +14,11 @@ function SearchBox(props) {
 
     const [msg, setMsg] = useState(props.msg);
 
-    return <>
+
+    return <Container className="SearchBox">
         <TextField
-            className="SearchBox"
             label="Search"
-            placeholder="@userName and search terms"
+            placeholder="@userName, #hashtags and search terms"
             fullWidth
             InputProps={{
                 endAdornment: (
@@ -35,10 +36,9 @@ function SearchBox(props) {
                 setMsg("Hit ENTER to initiate search");
 
                 if (e.keyCode === 13 && props.search) {
-                    q = e.target.value;
+                    const q = e.target.value || '*';
                     props.search(q);
                     setMsg("");
-
                     window.setInterval(() => {
                         props.search(q);
                     }, config.refresh || 60000);
@@ -46,7 +46,7 @@ function SearchBox(props) {
             }}
         />
         <div>{msg}</div>
-    </>
+    </Container>
 
 }
 
