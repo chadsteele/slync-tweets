@@ -3,6 +3,14 @@
   padding: 10px;
   border-radius: 10px;
   background-color: aliceblue;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.Cards {
+  margin-top: 80px;
 }
 
 .dots {

@@ -10,7 +10,7 @@ const config = {
         { id_str: '1250895001636216837' },
     ],
 
-    refresh: 60000,
+    refresh: 5 * 60 * 1000,
 
 }
 

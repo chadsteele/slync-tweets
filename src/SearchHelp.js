@@ -12,7 +12,6 @@ function SearchHelp() {
         <div>Operator: #haiku | Finds tweets: containing the hashtag "haiku."</div>
         <div>Operator: @mashable | Finds tweets: Referencing person "mashable."</div>
         <div>Operator: "happy hour" near:"san francisco" | Finds tweets: containing the exact phrase "happy hour" and sent near "san francisco."</div>
-        <div>Operator: near:NYC within:15mi | Finds tweets: sent within 15 miles of "NYC."</div>
         <div>Operator: superhero since:2010-12-27 | Finds tweets: containing "superhero" and sent since date "2010-12-27" (year-month-day).</div>
         <div>Operator: ftw until:2010-12-27 | Finds tweets: containing "ftw" and sent up to date "2010-12-27."</div>
         <div>Operator: movie -scary :) | Finds tweets: containing "movie", but not "scary," and with a positive attitude.</div>
